@@ -24,7 +24,7 @@ class GuerrierTest {
 
     /*----------------------------------------------------------------------------------*/
     @Test
-    public void Given_NewCharacter_WhenChooseRodeur_Then_DisplayDescriptionCharacterRodeur(){
+    public void Given_NewCharacter_WhenChooseGuerrier_Then_DisplayDescriptionCharacterGuerrier(){
         Guerrier guerrier = new Guerrier(1,80,30,30,20,400);
         assertEquals("Woarg je suis un Guerrier joueur 1 niveau 80 je possède 400 de vitalité, 30 force 30 d'agilité 20 d'intelligence !\n",outContent.toString());
     }

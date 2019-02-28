@@ -35,7 +35,7 @@ public class Personnage {
 
         try {
             do {
-                System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier, 2 : Rodeur, 3: Mage):");
+                System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier, 2: Rodeur, 3: Mage):");
                 choixPersonnage = entree.nextInt();
 
                 if (choixPersonnage < 1 || choixPersonnage > 3) {
