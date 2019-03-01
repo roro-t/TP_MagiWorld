@@ -17,7 +17,7 @@ public class Mage extends Personnage {
     }
     /*-------------------------------------------------------------------------*/
     @Override
-    public void attaqueBasic(Personnage attaquant, Personnage victime) {
+    public void attaqueBasique(Personnage attaquant, Personnage victime) {
         int dommages = getIntelligence();
 
         System.out.println("Joueur " +  attaquant.getJoueur() + " utilise Boule de feu et inflige " + dommages + " dommages.");
@@ -27,7 +27,7 @@ public class Mage extends Personnage {
     }
     /*-------------------------------------------------------------------------*/
     @Override
-    public void attaqueSpecial(Personnage attaquant, Personnage victime) {
+    public void attaqueSpeciale(Personnage attaquant, Personnage victime) {
         int ajoutPointDeVie = getIntelligence() * 2;
 
         System.out.println("Joueur " + attaquant.getJoueur() + " utilise le Soin et gagne " + ajoutPointDeVie + " en point de vie.");

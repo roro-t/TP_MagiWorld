@@ -49,11 +49,11 @@ public class Game {
             attaque = entree.nextInt();
 
             if (attaque == 1) {
-                attaquant.attaqueBasic(attaquant, victime);
+                attaquant.attaqueBasique(attaquant, victime);
             }
 
             else if (attaque == 2) {
-                attaquant.attaqueSpecial(attaquant, victime);
+                attaquant.attaqueSpeciale(attaquant, victime);
             }
             else {
                 System.out.println("Vous n'avez pas fait un choix correct");

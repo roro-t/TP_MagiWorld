@@ -17,7 +17,7 @@ public class Rodeur extends Personnage {
     }
     /*-------------------------------------------------------------------------*/
     @Override
-    public void attaqueBasic(Personnage attaquant, Personnage victime) {
+    public void attaqueBasique(Personnage attaquant, Personnage victime) {
         int dommages = getAgilite();
 
         System.out.println("Joueur " +  attaquant.getJoueur() + " utilise le Tir à l'arc et inflige " + dommages + " dommages.");
@@ -27,7 +27,7 @@ public class Rodeur extends Personnage {
     }
     /*-------------------------------------------------------------------------*/
     @Override
-    public void attaqueSpecial(Personnage attaquant, Personnage victime) {
+    public void attaqueSpeciale(Personnage attaquant, Personnage victime) {
         int ajoutAgilite = getNiveau() / 2;
 
         System.out.println("Joueur " + attaquant.getJoueur() + " utilise Concentration et gagne " + ajoutAgilite + " en agilité.");

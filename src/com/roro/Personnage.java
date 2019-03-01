@@ -22,25 +22,13 @@ public abstract class Personnage {
     public int getJoueur() {
         return joueur;
     }
-
-    public void setJoueur(int joueur) {
-        this.joueur = joueur;
-    }
     /*-----------------------------------------------------------------------------------*/
     public int getNiveau() {
         return niveau;
     }
-
-    public void setNiveau(int niveau) {
-        this.niveau = niveau;
-    }
     /*-----------------------------------------------------------------------------------*/
     public int getForce() {
         return force;
-    }
-
-    public void setForce(int force) {
-        this.force = force;
     }
     /*-----------------------------------------------------------------------------------*/
     public int getAgilite() {
@@ -53,10 +41,6 @@ public abstract class Personnage {
     /*-----------------------------------------------------------------------------------*/
     public int getIntelligence() {
         return intelligence;
-    }
-
-    public void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
     }
     /*-----------------------------------------------------------------------------------*/
     public int getPointDeVie() {
@@ -71,9 +55,20 @@ public abstract class Personnage {
         pointDeVie = pointDeVie - dommages;
     }
     /*-----------------------------------------------------------------------------------*/
-    public abstract void attaqueBasic(Personnage attaquant,Personnage enemy);
 
-    public abstract void attaqueSpecial(Personnage attaquant,Personnage enemy);
+    /**
+     * Abstract method
+     * @param attaquant joueur attaquant
+     * @param adversaire joueur adversaire
+     */
+    public abstract void attaqueBasique(Personnage attaquant,Personnage adversaire);
+
+    /**
+     Abstract method
+     * @param attaquant joueur attaquant
+     * @param adversaire joueur adversaire
+     */
+    public abstract void attaqueSpeciale(Personnage attaquant,Personnage adversaire);
 }
 
 

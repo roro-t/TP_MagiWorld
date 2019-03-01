@@ -29,6 +29,7 @@ public class Main {
     public static Personnage initialisationPersonnage(int numeroJoueur) {
 
         Scanner entree = new Scanner(System.in);
+        
         Personnage persoComplet = null;
         int joueur;
         int choixPersonnage;

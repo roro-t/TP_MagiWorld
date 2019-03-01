@@ -17,7 +17,7 @@ public class Guerrier extends Personnage{
     }
     /*-------------------------------------------------------------------------*/
     @Override
-    public void attaqueBasic(Personnage attaquant, Personnage victime) {
+    public void attaqueBasique(Personnage attaquant, Personnage victime) {
         int dommages = getForce();
 
         System.out.println("Joueur " +  attaquant.getJoueur() + " utilise Coup d'Epee et inflige " + dommages + " dommages.");
@@ -27,7 +27,7 @@ public class Guerrier extends Personnage{
     }
     /*-------------------------------------------------------------------------*/
     @Override
-    public void attaqueSpecial(Personnage attaquant, Personnage victime) {
+    public void attaqueSpeciale(Personnage attaquant, Personnage victime) {
         int dommages = getForce() * 2;
         int dommageAttaquant = getForce() / 2;
 
