@@ -35,14 +35,14 @@ class MageTest {
 
     @Test
     public void Given_Attack1_WhenChooseAttackBasic_Then_DisplayCorrectlyDamage(){
-        mageJ1.attaqueBasic(mageJ1,guerrierJ2);
+        mageJ1.attaqueBasique(mageJ1,guerrierJ2);
         assertEquals(390,guerrierJ2.getPointDeVie());
         assertEquals("Joueur 1 utilise Boule de feu et inflige 10 dommages.\nJoueur 2 perd 10 point de vie.\n",outContent.toString());
     }
 
     @Test
     public void Given_Attack2_WhenChooseAttackSpecial_Then_DisplayCorrectlyDamage(){
-        mageJ1.attaqueSpecial(mageJ1,guerrierJ2);
+        mageJ1.attaqueSpeciale(mageJ1,guerrierJ2);
         assertEquals(400,guerrierJ2.getPointDeVie());
         assertEquals("Joueur 1 utilise le Soin et gagne 20 en point de vie.\nJoueur 1 gagne 20 en point de vie.\n",outContent.toString());
     }

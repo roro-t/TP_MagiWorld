@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) {
 
         System.out.println("");
@@ -29,7 +30,7 @@ public class Main {
     public static Personnage initialisationPersonnage(int numeroJoueur) {
 
         Scanner entree = new Scanner(System.in);
-        
+
         Personnage persoComplet = null;
         int joueur;
         int choixPersonnage;
@@ -110,9 +111,9 @@ public class Main {
             return persoComplet;
         } catch (Exception e) {
             System.out.println("Vous devez rentrer des nombres");
-
         }
-    return null;
+        return null;
+
     }
     /*-------------------------------------------------------------------------*/
 }

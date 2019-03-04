@@ -33,14 +33,14 @@ class RodeurTest {
     }
     @Test
     public void Given_Attack1_WhenChooseAttackBasic_Then_DisplayCorrectlyDamage(){
-        rodeurJ1.attaqueBasic(rodeurJ1,guerrierJ2);
+        rodeurJ1.attaqueBasique(rodeurJ1,guerrierJ2);
         assertEquals(360,guerrierJ2.getPointDeVie());
         assertEquals("Joueur 1 utilise le Tir à l'arc et inflige 40 dommages.\nJoueur 2 perd 40 point de vie.\n",outContent.toString());
     }
 
     @Test
     public void Given_Attack2_WhenChooseAttackSpecial_Then_DisplayCorrectlyDamage(){
-        rodeurJ1.attaqueSpecial(rodeurJ1,guerrierJ2);
+        rodeurJ1.attaqueSpeciale(rodeurJ1,guerrierJ2);
         assertEquals(400,guerrierJ2.getPointDeVie());
         assertEquals("Joueur 1 utilise Concentration et gagne 50 en agilité.\n",outContent.toString());
     }

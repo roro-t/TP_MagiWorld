@@ -34,14 +34,14 @@ class GuerrierTest {
     }
     @Test
     public void Given_Attack1_WhenChooseAttackBasic_Then_DisplayCorrectlyDamage(){
-        guerrierJ1.attaqueBasic(guerrierJ1,mageJ2);
+        guerrierJ1.attaqueBasique(guerrierJ1,mageJ2);
         assertEquals(220,mageJ2.getPointDeVie());
         assertEquals("Joueur 1 utilise Coup d'Epee et inflige 30 dommages.\nJoueur 2 perd 30 point de vie.\n",outContent.toString());
     }
 
     @Test
     public void Given_Attack2_WhenChooseAttackSpecial_Then_DisplayCorrectlyDamage(){
-        guerrierJ1.attaqueSpecial(guerrierJ1,mageJ2);
+        guerrierJ1.attaqueSpeciale(guerrierJ1,mageJ2);
         assertEquals(190,mageJ2.getPointDeVie());
         assertEquals("Joueur 1 utilise Coup de rage et inflige 60 dommages.\nJoueur 2 perd 60 point de vie.\nJoueur 1 perd 15 point de vie.\n",outContent.toString());
     }
